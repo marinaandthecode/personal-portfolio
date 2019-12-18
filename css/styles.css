@@ -1,10 +1,10 @@
 /** Custom Properties **/
 
 :root {
-  --main-darkblue: #221E47;
-  --main-white: #F9F7F7;
-  --main-blue: #769FCD;
-  --main-gray: #576974;
+  --main-darkblue: #121248;
+  --main-white: #f9fafa;
+  --main-blue: #437bbb;
+  --main-gray: #637683;
 }
 
 /** Reset **/
@@ -39,7 +39,7 @@ body {
 
 h1 {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 
 h2 {
@@ -72,7 +72,7 @@ img {
   display: flex;
   justify-content: flex-end;
   background-color: var(--main-blue);
-  box-shadow: 0 3px 4px rgba(65, 65, 65, 0.3);
+  box-shadow: 0 3px 8px rgba(65, 65, 65, 0.4);
   z-index: 2;
 }
 
@@ -113,6 +113,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: var(--main-darkblue);
   letter-spacing: 2px;
 }
@@ -122,6 +123,7 @@ img {
   font-weight: 300;
   font-style: italic;
   font-size: 2.5rem;
+  padding: 0.5rem;
 }
 
 @media (max-width: 500px) {
@@ -161,6 +163,9 @@ img {
   .projects-section {
     padding: 4rem 1.5rem;
   }
+  .projects-section-header {
+    font-size: 2rem;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -179,7 +184,7 @@ img {
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
@@ -191,6 +196,7 @@ img {
   font: inherit;
   border: none;
   border-radius: 0.2rem;
+  font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -234,7 +240,7 @@ img {
 
 .contact-section-header p {
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-style: italic;
   color: var(--main-blue);
 }
@@ -255,6 +261,11 @@ img {
 }
 
 @media (max-width: 500px) {
+  .contact-links {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+  }
+
   .contact-links a {
     padding: 0.2rem 0.5rem;
   }
@@ -270,7 +281,6 @@ footer {
   justify-content: flex-end;
   align-items: center;
   border-top: 3px solid var(--main-blue);
-  box-shadow: 0 -2px 2px rgba(65, 65, 65, 0.3);
   padding: 1.5rem;
 }
 
