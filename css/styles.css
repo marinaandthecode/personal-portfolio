@@ -17,15 +17,15 @@
 
 /** Responsive Typography **/
 
-@media (max-width: 980px) {
-  body {
+@media (max-width: 768px) {
+  html {
     font-size: 95%;
   }
 }
 
-@media (max-width: 500px) {
-  body {
-    font-size: 80%;
+@media (max-width: 550px) {
+  html {
+    font-size: 90%;
   }
 }
 
@@ -67,21 +67,23 @@ img {
 
 .nav {
   position: fixed;
+  min-height: 8vh;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: var(--main-blue);
-  box-shadow: 0 3px 8px rgba(65, 65, 65, 0.4);
+  box-shadow: 0 3px 6px rgba(65, 65, 65, 0.4);
   z-index: 2;
 }
 
 .nav-list {
   display: flex;
+  align-items: center;
   margin-right: 2em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .nav {
     justify-content: center;
   }
@@ -108,13 +110,15 @@ img {
 .welcome-section {
   height: 100vh;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--main-darkblue);
+  background-image: linear-gradient(-35deg, rgba(18, 18, 72, 0.7), rgba(13, 13, 50, 0.7)), url("skewed_print.png");
+  background-repeat: repeat;
+  background-blend-mode: color;
   letter-spacing: 2px;
 }
 
@@ -123,16 +127,7 @@ img {
   font-weight: 300;
   font-style: italic;
   font-size: 2.5rem;
-  padding: 0.5rem;
-}
-
-@media (max-width: 500px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-  .welcome-section p {
-    font-size: 2rem;
-  }
+  padding: 1rem;
 }
 
 /* Projects */
@@ -159,7 +154,7 @@ img {
   margin: 3rem auto 5rem auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .projects-section {
     padding: 4rem 1.5rem;
   }
@@ -231,7 +226,7 @@ img {
   font-size: 3.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .contact-section-header > h2 {
     font-size: 2.7rem;
     padding-top: 0.3rem;
@@ -260,7 +255,7 @@ img {
   text-shadow: 1px 1px var(--main-blue);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .contact-links {
     margin-top: 2rem;
     font-size: 1.4rem;
@@ -284,7 +279,7 @@ footer {
   padding: 1.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   footer {
     justify-content: center;
     text-align: center;
